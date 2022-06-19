@@ -187,12 +187,17 @@ function M.is_float(win)
   return opts and opts.relative and opts.relative ~= ""
 end
 
+function M.is_commandline_window()
+  -- getcmdwintype() returns "" for all win types, other than command-line
+  return vim.fn.getcmdwintype() ~= ""
+end
+
 function M.is_valid_win(win)
   if not vim.api.nvim_win_is_valid(win) then
     return false
   end
-  -- dont do anything for floating windows
-  if M.is_float(win) then
+  -- dont do anything for floating or commandline windows
+  if M.is_float(win) or M.is_commandline_window() then
     return false
   end
   local buf = vim.api.nvim_win_get_buf(win)

@@ -1,5 +1,8 @@
 # ✅ Todo Comments
 
+> :warning: [**FORK**] - prevents attaching to command-line windows (which breaks tooling,
+> as window is not valid).  Using this until upstream [issue](https://github.com/folke/todo-comments.nvim/issues/107) gets resolved.
+
 **todo-comments** is a lua plugin for Neovim 0.5 to highlight and search for todo comments like
 `TODO`, `HACK`, `BUG` in your code base.
 
