@@ -1,5 +1,9 @@
 # ✅ Todo Comments
 
+> :bomb: :bomb: Please use the original repo/plugin - the purpose of this fork
+> was to implement a fix for commandmode windows; however, the fix has been
+> merged upstream.  I will not be maintaining this fork
+
 > :warning: [**FORK**] - prevents attaching to command-line windows (which breaks tooling,
 > as window is not valid).  Using this until upstream [issue](https://github.com/folke/todo-comments.nvim/issues/107) gets resolved.
 
